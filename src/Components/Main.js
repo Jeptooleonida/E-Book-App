@@ -5,7 +5,7 @@ function Main(){
         < >
             <div className="header-section" >
                 <div className="logo-section">
-                     <img src = "https://www.keepinspiring.me/wp-content/uploads/2020/02/human-nature-weakness-bookstore-henry-ward-bleecher-min.jpg"/> 
+                     <img src = "https://thumbs.dreamstime.com/b/blurred-image-many-old-books-bookshelf-library-81867124.jpg"/> 
                 </div>
                 <div className="search-section">
                     <h2> Find your book here </h2>
