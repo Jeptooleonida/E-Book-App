@@ -1,11 +1,13 @@
 import React from "react";
+import "../Styles/Main.css";
 
 function Main(){
     return (
         < >
             <div className="header-section" >
                 <div className="logo-section">
-                     <img src = "https://qph.cf2.quoracdn.net/main-qimg-6830d0e374b3474c841024c7b6669f79-pjlq"/>
+                    <h3> </h3>
+                     <img src = "https://media.allauthor.com/images/poster/original/1529479637920-a-room-without-books-is-like-a-body-without-a-soul.jpg"/>
  
                 </div>
                 <div className="search-section">
