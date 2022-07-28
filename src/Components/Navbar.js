@@ -1,5 +1,6 @@
 import React from 'react';
-import {Link} from "react-router-dom";
+// import {Link} from "react-router-dom";
+import "../Styles/Navbar.css"
 
 const Navbar = () => {
     return (
@@ -8,14 +9,19 @@ const Navbar = () => {
                 <h1>E-Tech App</h1>
             </div>
             <div className="navbar-content">
-                <Link to="/favorites">
-                    <h3>Your favorites</h3>
-                </Link>
+               <ul>
+                   <li>
+                        <a href="/home">Home</a>
+                   </li>
+                   <li>
+                        <a href="/home">Favourites</a>
+                   </li>
+               </ul>
 
             </div>
         </div>
 
     )
-}
+    }
 
-export default Navbar;
+    export default Navbar;
