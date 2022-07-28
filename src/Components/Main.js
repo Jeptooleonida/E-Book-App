@@ -5,7 +5,7 @@ function Main(){
         < >
             <div className="header-section" >
                 <div className="logo-section">
-                     <img src = "https://thumbs.dreamstime.com/b/blurred-image-many-old-books-bookshelf-library-81867124.jpg"/>
+                     <img src = "https://qph.cf2.quoracdn.net/main-qimg-6830d0e374b3474c841024c7b6669f79-pjlq"/>
  
                 </div>
                 <div className="search-section">

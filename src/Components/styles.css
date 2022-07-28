@@ -38,14 +38,11 @@ html{
     margin-top: 30px;
     width: 300px;
 }
-.logo-section{
-    margin-left: 20px;
-    width: 250px;
-    align-items: center;
-}
+
 .logo-section img{
     width: 600px;
-    border-radius: 5px;
+    border-bottom-left-radius: 10px;
+    margin-bottom: 20px;
     
 }
 .search{
