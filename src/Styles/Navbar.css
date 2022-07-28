@@ -19,6 +19,7 @@
 }
 .navbar-content li{
     list-style-type: none;
+    font-weight: bold;
     margin: 0 1rem ;
 
 }
