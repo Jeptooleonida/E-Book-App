@@ -1,7 +1,33 @@
-import React from "react";
+// import React from "react";
 import "../Styles/Main.css";
+// import Books from "./Books";
+import React, {useState, useEffect } from "react";
+import { BOOK_DETAILS_URL } from "../API";
+
 
 function Main(){
+    const [search, setSearch] = useState("");
+    const [bookData, setBookData] = useState([])
+
+
+    const handleSearch= (evt) => {
+        if (evt.key === "search") {
+            fetch (BOOK_DETAILS_URL)
+            .then (response => response.json())
+            .then (response => setBookData(response.data.items))
+
+        }
+
+        useEffect(() => {
+            handleSearch()
+
+        }, [])
+
+
+    }
+
+
+
     return (
         < >
             <div className="header-section" >
@@ -13,7 +39,7 @@ function Main(){
                 <div className="search-section">
                     <h2> Find your book here </h2>
                     <div className= "search" > 
-                        <input type="text" placeholder="Type book name" value ="Type " />
+                        <input type="text" placeholder="Type book name" value ={search} onChange={e=>setSearch(e.target.value)} onKeyPress={handleSearch} />
                         <button className="search-btn"> <i className="fas fa-search"></i> </button>
                         
                     </div>
