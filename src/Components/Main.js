@@ -13,7 +13,7 @@ function Main(){
                 <div className="search-section">
                     <h2> Find your book here </h2>
                     <div className= "search" > 
-                        <input type="text" placeholder="Type book name" value ="search" />
+                        <input type="text" placeholder="Type book name" value ="Type " />
                         <button className="search-btn"> <i className="fas fa-search"></i> </button>
                         
                     </div>
