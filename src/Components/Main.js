@@ -1,6 +1,6 @@
 // import React from "react";
 import "../Styles/Main.css";
-// import Books from "./Books";
+import Card from "./Card";
 import React, {useState, useEffect } from "react";
 import { BOOK_DETAILS_URL } from "../API";
 
@@ -33,7 +33,7 @@ function Main(){
             <div className="header-section" >
                 <div className="logo-section">
                     <h3> </h3>
-                     <img src = "https://media.allauthor.com/images/poster/original/1529479637920-a-room-without-books-is-like-a-body-without-a-soul.jpg"/>
+                     <img src = "https://media.allauthor.com/images/poster/original/1529479637920-a-room-without-books-is-like-a-body-without-a-soul.jpg" alt="newimage"/>
  
                 </div>
                 <div className="search-section">
@@ -43,8 +43,13 @@ function Main(){
                         <button className="search-btn"> <i className="fas fa-search"></i> </button>
                         
                     </div>
-                    <img src="https://us.123rf.com/450wm/lenm/lenm1210/lenm121000033/15590717-illustration-of-stick-kids-reading-books-from-piles-of-reading-materials.jpg?ver=6" />
+                    <img src="https://us.123rf.com/450wm/lenm/lenm1210/lenm121000033/15590717-illustration-of-stick-kids-reading-books-from-piles-of-reading-materials.jpg?ver=6" alt="bookimage" />
                 </div>
+            </div>
+            <div className="container">
+              {
+                    <Card book={bookData}/>
+              }  
             </div>
 
         </>
