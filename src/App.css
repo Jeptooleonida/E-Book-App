@@ -36,3 +36,44 @@
     transform: rotate(360deg);
   }
 }
+img {
+  width: 300px;
+  height: 300px;
+  transition: all 0.3s ease;
+}
+
+img:hover {
+  transform: scale(1.1);
+}
+button {
+  padding: 10px;
+  background: black;
+  color: white;
+  width: 300px;
+  font-size: 20px;
+  border-radius: 5px;
+}
+.book-details {
+  min-height: 80vh;
+  width: 100%;
+  font-size: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  padding: 10px;
+}
+
+.book-image {
+  margin: 0 30px;
+}
+
+.book-description {
+  margin: 0x 20px;
+}
+.book{
+  font-size: 25px;
+  font-weight: bold;
+  color: aliceblue;
+  margin-top: 20px;
+
+}
