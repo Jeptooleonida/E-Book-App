@@ -1,8 +1,9 @@
 import React, { useState, useEffect } from "react";
 import "../App";
-import { useParams } from "react";
+import { useParams } from "react-router-dom";
 import axios from "axios";
 import { BOOK_DETAILS_URL } from "../API";
+import "../Styles/BookDetails.css";
 
 const BookDetails = () => {
   const [books, setBooks] = useState({});
