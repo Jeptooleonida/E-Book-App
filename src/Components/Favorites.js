@@ -1,6 +1,7 @@
 import React from "react";
 import "../App";
 import { useAppContext } from "./context/appContext";
+import "../Styles/Favorites.css";
 
 function Favorites(){
   const { favorites, addToFavorites, removeFromFavorites } = useAppContext();

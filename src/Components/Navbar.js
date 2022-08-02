@@ -1,7 +1,7 @@
 import React from "react";
 import "../App";
 import "../Styles/Navbar.css";
-// import { Link } from "react-router-dom";
+import { Link } from "react-router-dom";
 
 const Navbar = () => {
   return (
@@ -9,10 +9,11 @@ const Navbar = () => {
       <div>
         <h1>React Books App</h1>
       </div>
-      <div>
-        {/* <Link to="/favorites"> */}
-          <h3>Your Favorites</h3>
-        {/* </Link> */}
+   
+      <div className="navbar-element">
+        <Link to="/favorites">
+         <div> <h3>Your Favorites</h3></div>
+        </Link>
       </div>
     </div>
   );
