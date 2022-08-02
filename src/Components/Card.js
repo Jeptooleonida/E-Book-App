@@ -1,4 +1,5 @@
-import React, {useState} from   'react';
+import React from 'react';
+import {useState} from   'react';
 import BookDescription from './BookDescription';
 
 function Card({book}) {
@@ -23,7 +24,7 @@ function Card({book}) {
                                     <p className="amount">&#8377;{amount}</p>
                                 </div>
                             </div>
-                              <Modal show={show} item={bookItem} onClose={()=>setShow(false)}/>
+                              <BookDescription show={show} item={bookItem} onClose={()=>setShow(false)}/>
                             </>
                         )
                     }
