@@ -30,7 +30,7 @@ html{
 }
 .search-section h2{
     font-size: 3rem;
-    margin-top: 20px;
+    margin-top: 60px;
     margin-bottom: 10px;
 
 }
@@ -40,29 +40,12 @@ html{
 }
 
 .logo-section img{
-    width: 665px;
+    width: 45vw;
+    height: 65vh;
     clip-path: circle(100% at left 280px);
     z-index: -1;
    
     
 }
-.search{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-.search input{
-    outline: 0;
-    border: 0;
-    width: 350px;
-    height: 35px;
-    padding: 0 0.5rem;
-    font-size: 15px;
-    font-weight: bold;
-}
-.search button{
-    outline: none;
-    border: none;
-    height: 35px;
-    padding: 0 0.5rem;
-}
+
+
