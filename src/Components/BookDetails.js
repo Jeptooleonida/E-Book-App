@@ -4,6 +4,7 @@ import { useParams } from "react-router-dom";
 import axios from "axios";
 import { BOOK_DETAILS_URL } from "../API";
 import "../Styles/BookDetails.css";
+import Post from "./Review";
 
 const BookDetails = () => {
   const [books, setBooks] = useState({});
@@ -24,6 +25,9 @@ const BookDetails = () => {
       <div className="book-image">
         <h2>{books.title}</h2>
         <img src={books.image_url} alt="book-img" />
+          <div> 
+            <Post />
+          </div>
       </div>
       <div className="book-description">
         <h2>Description</h2>
@@ -33,7 +37,9 @@ const BookDetails = () => {
         <h2>Genres</h2>
         <p>{books.genres}</p>
       </div>
+     
     </div>
+     
   );
 };
 
