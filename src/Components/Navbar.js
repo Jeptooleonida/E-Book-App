@@ -1,27 +1,21 @@
-import React from 'react';
-// import {Link} from "react-router-dom";
-import "../Styles/Navbar.css"
+import React from "react";
+import "../App";
+import "../Styles/Navbar.css";
+// import { Link } from "react-router-dom";
 
 const Navbar = () => {
-    return (
-        <div className="navbar">
-            <div className="navbar-header">
-                <h1>E-Tech App</h1>
-            </div>
-            <div className="navbar-content">
-               <ul>
-                   <li>
-                        <a href="/home">Home</a>
-                   </li>
-                   <li>
-                        <a href="/home">Favourites</a>
-                   </li>
-               </ul>
+  return (
+    <div className="navbar">
+      <div>
+        <h1>React Books App</h1>
+      </div>
+      <div>
+        {/* <Link to="/favorites"> */}
+          <h3>Your Favorites</h3>
+        {/* </Link> */}
+      </div>
+    </div>
+  );
+};
 
-            </div>
-        </div>
-
-    )
-    }
-
-    export default Navbar;
+export default Navbar;
