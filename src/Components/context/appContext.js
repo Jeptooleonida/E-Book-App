@@ -2,17 +2,13 @@ import React from 'react';
 import { createContext, useContext } from "react";
 import { useState } from "react";
 
-const AppContext = createContext(null);
+const AppContext = createContext([]);
 
 export const useAppContext = () => {
   const context = useContext(AppContext);
 
   if (context === undefined) {
     throw new Error("Appcontext must be within appContextProvider!");
-  }
-  else{
-    
-
   }
 
   return context;
