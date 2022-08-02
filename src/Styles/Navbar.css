@@ -6,6 +6,13 @@
     align-items: center;
     justify-content: space-evenly;
   }
+  .navbar-element h3{
+      font-size: 25px;
+      color: white;
+      font-weight: bold;
+      text-decoration: none;
+      display: flex;
+  }
 
 .navbar-content{
     font-size: 20px;
