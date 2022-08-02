@@ -1,9 +1,10 @@
 import React, { useState, useEffect } from "react";
 import "../App";
-// import { API_URL } from "../API";
-// import axios from "axios";
+import { API_URL } from "../API";
+import axios from "axios";
 import { useAppContext } from "./context/appContext";
-import { useNavigate } from 'react';
+import { useNavigate } from "react-router-dom";
+import "../Styles/BookList.css";
 
 function BookList() {
   const [books, setBooks] = useState([]);
@@ -17,9 +18,8 @@ function BookList() {
   };
 
   useEffect(() => {
-    
-      fetch("https://example-data.draftbit.com/books?_limit=50")
-      .then((res) => res.json() )
+    axios
+      .get(API_URL)
       .then((res) => {
         console.log(res.data);
         setBooks(res.data);
@@ -28,7 +28,7 @@ function BookList() {
   }, []);
 
   return (
-    <div className="book-list">
+    <div className="booklist">
       {books.map((book) => (
         <div key={book.id} className="book">
           <div>
